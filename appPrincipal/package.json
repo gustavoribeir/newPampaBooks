@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "build-css": "sass /stylesheets/scss/style.scss /public/stylesheets/css/style.css",
+    "watch-css": "sass --watch public/stylesheets/scss:public/stylesheets/css"
   },
   "dependencies": {
     "axios": "^1.7.7",
@@ -21,7 +23,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.8.1",
     "morgan": "~1.9.1",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "sass": "^1.81.0"
   },
   "main": "app.js",
   "keywords": [],
