@@ -9,22 +9,52 @@
 </head>
 <body>
     <header>
-        <div class="menuEsquerda">
-            <a href="/"><img src="/images/logo.png" alt="Ir para Home"></a>
-            <a href="/books">Livros</a>
-            <form action="/search" method="get">
-                <input type="text" name="searcher" placeholder="">
-            </form>
-        </div>
-        <div class="menuDireita">
-
-        </div>
+        <nav>
+            <div class="menuEsquerda">
+                <a href="/"><img src="/images/logo.png" alt="Ir para Home"></a>
+                <a href="books">Livros</a>
+                <form action="/search" method="get">
+                    <input type="text" name="searcher" placeholder="">
+                </form>
+                <a href="contato">Contato</a>
+                <a href="about">Sobre Nós</a>
+            </div>
+            <div class="menuDireita">
+                <a href="profile"><img src="/images/profileicon.png" alt="Ir para pagina de perfil"></a>
+            </div>
+        </nav>
     </header>
     <main>
         <%- body %>
     </main>
     <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="livros">
+                    <a href="books">Cheque todos os livros</a>
+                </div>
 
+                <div class="contato">
+                    <h4>Contato</h4>
+                    <p>Email: contato@pampabooks.com</p>
+                    <p>Telefone: (54) 3223-4568</p>
+                    <p>Endereço: Rua dos Livros, 5453, Caxias do Sul, RS</p>
+                </div>
+
+                <div class="redes-sociais">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                      <li><a href="https://www.facebook.com"><img src="/images/facebook.png" alt="Facebook"></a></li>
+                      <li><a href="https://www.instagram.com"><img src="/images/instagram.png" alt="Instagram"></a></li>
+                      <li><a href="https://www.twitter.com"><img src="/images/twitter.png" alt="Twitter"></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PampaBooks. Todos os direitos reservados.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
